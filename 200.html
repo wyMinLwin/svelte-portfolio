@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/wyml/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="modulepreload" href="/wyml/_app/immutable/entry/start.9124d6d9.js">
+		<link rel="modulepreload" href="/wyml/_app/immutable/chunks/scheduler.fd749f46.js">
+		<link rel="modulepreload" href="/wyml/_app/immutable/chunks/singletons.f5bb0f99.js">
+		<link rel="modulepreload" href="/wyml/_app/immutable/chunks/index.437c9e79.js">
+		<link rel="modulepreload" href="/wyml/_app/immutable/entry/app.bfc48ec2.js">
+		<link rel="modulepreload" href="/wyml/_app/immutable/chunks/index.a10e43a6.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_15rhk7o = {
+						assets: "/wyml",
+						base: "/wyml",
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/wyml/_app/immutable/entry/start.9124d6d9.js"),
+						import("/wyml/_app/immutable/entry/app.bfc48ec2.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
