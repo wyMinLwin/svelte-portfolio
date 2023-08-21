@@ -35,7 +35,7 @@
             <Info />
         </div>
         <div 
-            class="col-span-1 w-full min-h-screen bg-light-shade-2 custom-pointer lg:overflow-y-scroll"
+            class="col-span-1 w-full lg:min-h-screen bg-light-shade-2 custom-pointer lg:overflow-y-scroll"
             role="presentation"    
             on:mouseenter={(e) => cursor = 'bg-black'}
         >
