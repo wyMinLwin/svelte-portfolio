@@ -28,20 +28,17 @@
 
 <div class="w-screen h-screen lg:overflow-hidden relative ">
     <div class="grid grid-cols-1 lg:grid-cols-2 h-screen">
-        <div class="hidden lg:block col-span-1 bg-dark-main w-full lg:h-screen text-light-shade-2"
+        <div class="col-span-1 w-full lg:h-screen bg-dark-main text-light-shade-2"
             role="presentation"    
             on:mouseenter={(e) => cursor='bg-white'}
         >
             <Info />
         </div>
         <div 
-            class="col-span-1 w-full min-h-screen custom-pointer overflow-y-scroll"
+            class="col-span-1 w-full min-h-screen bg-light-shade-2 custom-pointer lg:overflow-y-scroll"
             role="presentation"    
             on:mouseenter={(e) => cursor = 'bg-black'}
         >
-            <div class="block lg:hidden col-span-1 bg-dark-main w-full h-fit text-light-shade-2">
-                <Info />
-            </div>
             <slot />
         </div>
     </div>
