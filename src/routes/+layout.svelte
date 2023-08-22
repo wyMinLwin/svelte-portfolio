@@ -1,4 +1,5 @@
 <script>
+    export const prerender = true;
     import "../app.css"
     import { spring } from 'svelte/motion';
     import Info from "./Info.svelte";
@@ -9,7 +10,6 @@
 	});
 	let scale = '';
     let opacity = true;
-    let cursor = '';
 </script>
 <svelte:head>
     <title>Wai Yan Min Lwin</title>
@@ -26,25 +26,18 @@
     on:mouseup={() => scale = ''}
 />
 
-<div class="w-screen h-screen lg:overflow-hidden relative ">
-    <div class="grid grid-cols-1 lg:grid-cols-2 h-screen">
-        <div class="col-span-1 w-full lg:h-screen bg-dark-main text-light-shade-2"
-            role="presentation"    
-            on:mouseenter={(e) => cursor='bg-white'}
-        >
+<div class="w-screen bg-main h-fit lg:h-screen lg:overflow-hidden relative text-muted">
+    <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
+        <div class="col-span-1 w-full lg:h-screen text-text" >
             <Info />
         </div>
-        <div 
-            class="col-span-1 w-full lg:min-h-screen bg-light-shade-2 custom-pointer lg:overflow-y-scroll"
-            role="presentation"    
-            on:mouseenter={(e) => cursor = 'bg-black'}
-        >
+        <div class="col-span-1 w-full lg:min-h-screen custom-pointer lg:overflow-y-scroll">
             <slot />
         </div>
     </div>
     <div 
-        class="absolute {scale} {opacity ? 'lg:opacity-100 opacity-0' : 'opacity-0'} w-4 h-4 rounded-full {cursor}" 
-        style="top:{$coords.y}px;left:{$coords.x}px;pointer-events:none"
+        class="absolute {scale} {opacity ? 'lg:opacity-100 opacity-0' : 'opacity-0'} w-96 h-96 rounded-full blur-2xl z-10" 
+        style="top:{$coords.y}px;left:{$coords.x}px;pointer-events:none;transform:translate(-50%,-50%);background-color: rgba(60, 60, 220, 0.1);"
     ></div>
 </div>
 
@@ -52,8 +45,5 @@
     .scale {
         transition: all 100ms linear;
         transform: scale(1.5);
-    }
-    * {
-        cursor: none;
     }
 </style>

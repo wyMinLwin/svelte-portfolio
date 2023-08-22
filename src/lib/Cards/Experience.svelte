@@ -38,26 +38,26 @@
     on:intersect = {() => {setCurrentMenu('EXPERIENCES');}}
 >
     <div 
-        id="EXPERIENCES" bind:this={element} class="relative  text-dark-text ">
-        <div class="flex flex-col justify-start pt-16 items-start w-11/12 md:w-10/12 lg:w-3/4 mx-auto gap-y-3">
-            <div class="font-semibold text-2xl">My Experiences</div>
+        id="EXPERIENCES" bind:this={element} class="relative ">
+        <div class="flex flex-col justify-start pt-16 items-start w-11/12 md:w-10/12 lg:w-3/4 mx-auto gap-y-5">
+            <div class="font-semibold text-text text-2xl">My Experiences</div>
             {#each experiences as exp (exp.company) }
-                <div class="grid grid-cols-12 w-full my-3 p-2 rounded-lg gap-x-2" style="border:1px solid #121212">
+                <div class="grid grid-cols-12 w-full my-3 p-0 rounded-lg gap-x-2">
                     <div class="col-span-6 sm:col-span-4 grid grid-cols-3 text-xs mb-auto pt-1">
-                        <div class="sm:text-end my-auto">{exp.startDate}</div>
-                        <div class="w-2/3 bg-dark-text m-auto" style="height:1px"></div>
+                        <div class="text-start my-auto">{exp.startDate}</div>
+                        <div class="w-2/3 bg-muted m-auto" style="height:1px"></div>
                         <div class="text-start my-auto">{exp.endDate}</div>
                     </div>
                     <div class="col-span-12 sm:col-span-8">
-                        <div class="mb-2 flex justify-start items-center">
+                        <div class="mb-2 flex justify-start items-center text-text">
                             <div class="font-semibold">{exp.position}</div>
-                            <Icon icon="mdi:circle-small" />
+                            <Icon class="text-muted" icon="mdi:circle-small" />
                             <div>{exp.company}</div>
                         </div>
                         <div class="mb-2 text-sm">{exp.desc}</div>
                         <div class="mb-2 flex justify-start items-center flex-wrap gap-2">
                             {#each exp.skills as skill (skill) }
-                                <span class="w-fit h-fit px-2 text-dark-text text-sm rounded-full" style="border:1px solid #121212">{skill}</span>
+                                <span class="w-fit h-fit px-2 text-sm text-secondary rounded-full border-secondary" style="border:1px solid #55d4c2">{skill}</span>
                             {/each}
                         </div>
                     </div>
