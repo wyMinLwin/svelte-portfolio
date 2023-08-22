@@ -55,7 +55,7 @@
 
 <IntersectionObserver
     {element}
-    threshold={0.7}
+    threshold={0.4}
     on:intersect={() => {setCurrentMenu("PROJECTS");}}
 >
     <div 

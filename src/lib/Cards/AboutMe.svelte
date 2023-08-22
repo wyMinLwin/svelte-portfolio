@@ -5,6 +5,7 @@
 </script>
 <IntersectionObserver
     {element}
+    threshold={0.7}
     on:intersect = {() => setCurrentMenu("ABOUT")}
 >
     <div
