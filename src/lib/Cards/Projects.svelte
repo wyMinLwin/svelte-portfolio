@@ -45,7 +45,7 @@
         {
             title: "Portfolio v2",
             desc: "The inspiration of this portfolio came from Dribble. I was about to help my friend to create a portfolio and suddenly I saw the layout like apple watch's UI and I thought what if I implement that kind of layout to portfolio with pop-up. And then I figured it out this is the result. ",
-            demo: "https://wyminlwin-terminal-ts.netlify.app/",
+            demo: "https://wyminlwin-ts.netlify.app/",
             github: "https://github.com/wyMinLwin/terminal-react-ts",
             image: ReactTS,
             tools: ["React","TypeScript","Tailwind Css","Vite"]
@@ -76,7 +76,7 @@
                                 <Icon class="text-lg" icon="material-symbols:arrow-outward-rounded" />
                             </span>
                         </div>
-                        <div class="text-sm">{project.desc}</div>
+                        <div class="text-sm my-2">{project.desc}</div>
                         <div class="flex justify-start items-center flex-wrap gap-2">
                             {#each project.tools as tool (tool) }
                                 <span class="w-fit h-fit px-2 text-sm text-secondary rounded-full border-secondary" style="border:1px solid #55d4c2">{tool}</span>
