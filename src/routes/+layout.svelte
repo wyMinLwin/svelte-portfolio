@@ -1,5 +1,4 @@
 <script>
-    export const prerender = true;
     import "../app.css"
     import { spring } from 'svelte/motion';
     import Info from "./Info.svelte";
