@@ -34,7 +34,7 @@
 
 <IntersectionObserver
     {element}
-    threshold={0.7}
+    threshold={1}
     on:intersect = {() => {setCurrentMenu('EXPERIENCES');}}
 >
     <div 
