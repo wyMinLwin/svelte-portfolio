@@ -4,12 +4,29 @@
     import Portfolio from '$lib/images/Portfolio.png'
     import ReactTS from '$lib/images/ReactTS.png'
     import TypingSpeed from '$lib/images/TypingSpeed.png'
-
+    import SvelteFriend from '$lib/images/SvelteFriend.png'
+    import ReactPos from '$lib/images/ReactPos.png'
     import IntersectionObserver from "svelte-intersection-observer";
     import { setCurrentMenu } from '../../routes/store';
     import Icon from '@iconify/svelte';
     let element:HTMLElement;
     let projects = [
+        {
+            title: "Svelte Friends",
+            desc: "This is my SvelteKit app that I still maintaining. My goal about this project is to give seamless user experiences to users. I mainly focused on user interaction. The purpose of app is like tinder with in case of friends. Me and one of my coder friends about to collaborate in this project.",
+            demo: "https://svelte-friends.vercel.app/login",
+            github: "https://github.com/wyMinLwin/svelte-friends",
+            image: SvelteFriend,
+            tools: ["SvelteKit","TypeScript","Tailwind Css","PNPM"]
+        },
+        {
+            title: "React POS",
+            desc: "This is not a traditional pos with a bunch of table layout. I used clean component card layout ui. I implemented TanStack Query to that app with Supabase. I still maintaining this app as long as with my SvelteKit Friends app.",
+            demo: "https://wyml-react-pos.vercel.app",
+            github: "https://github.com/wyMinLwin/react-pos",
+            image: ReactPos,
+            tools: ["React","TanStack Query","Supabase","Redux Toolkit","TypeScript","Tailwind Css","PNPM","Vite"]
+        },
         {
             title: "React Terminal",
             desc: "The idea of developing this app is really personal cause I really like to use terminal and CLI. I build the project with Vite As a first I started working on layout to get a clean layout. Since there was one page It was easy to create a layout. I used Redux Toolkit to store the history of command and write a bunch of straight forward JavaScirpt method to give a response to user. The major problem I faced with this projects are getting the history with the key storke and try to display that on the screen and think about how should the command typing work without using the HTML built-in Input tag.",
@@ -85,9 +102,6 @@
                     </div>
                 </a>
             {/each}
-                
-            
-
             <div>
                 But now I am about to re-foucs on my own projects. And If you want to me collaborate in your projects I would like to.
             </div>

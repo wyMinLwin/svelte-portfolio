@@ -14,7 +14,7 @@
             <div class="font-bold text-text text-2xl">About Me</div>
             <div>
                 <span class="font-semibold text-heightlight">Back in late 2020</span>, I found how to code in <span class="font-semibold text-heightlight">HTML</span>. Then I decided to learn more about programming. 
-                At the start of the day, I didn't think to much and learned <span class="font-semibold  text-heightlight">Python</span>.
+                At the start of the day, I didn't think too much and learned <span class="font-semibold  text-heightlight">Python</span>.
                 I knew I love programming and I decided not to University and then I learned web development.
                 <span class="font-semibold text-heightlight">In June of 2022</span>, I focused Web development and started as Junior Frontend Developer <span class="font-semibold text-heightlight">at the end of 2022</span>.
             </div>
