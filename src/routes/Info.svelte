@@ -20,7 +20,7 @@
 <content class="flex flex-col justify-start lg:justify-between items-start h-full py-24 w-10/12 lg:w-3/4 mx-auto">
     <div>
         <div class="text-3xl md:text-5xl font-bold">Wai Yan Min Lwin</div>
-        <div class="my-3 text:2xl md:text-3xl">Frontend Engineer</div>
+        <div class="my-3 text:2xl md:text-3xl">Software Engineer</div>
         <div class="opacity-75">I build accessible, maintainable and digital experience for the web.</div>
         <div class="hidden lg:block mt-10">
             {#each menu as item (item.value) }

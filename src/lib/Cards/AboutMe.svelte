@@ -1,6 +1,8 @@
 <script lang="ts">
     import IntersectionObserver from "svelte-intersection-observer";
     import { setCurrentMenu } from "../../routes/store";
+    import Icon from "@iconify/svelte";
+    import resume from '$lib/pdf/Wai_Yan_Min_Lwin.pdf'
     let element:HTMLElement;
 </script>
 <IntersectionObserver
@@ -32,6 +34,10 @@
                     I like to work together around with the team. I always hold the key of a balance team. Personally active to help everyone around and always enthusiastic to keep in touch with new technology trends.
                 </div>
             </div>
+            <a href={resume} download class="border-2 flex justify-center items-center gap-x-2 border-secondary px-4 py-1 rounded-md text-secondary" >
+                <span>Get My Resume</span> 
+                <Icon icon="line-md:download-loop" style={'font-size: 1.5em'} />
+            </a>
         </div>
     </div>
 </IntersectionObserver>
